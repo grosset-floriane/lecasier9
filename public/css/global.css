@@ -1,0 +1,503 @@
+/**
+*Polices de caractere
+*/
+
+@font-face
+{
+    font-family: "gulim";
+    src: url('/font/gulim.ttf');
+}
+
+@font-face
+{
+    font-family: "heiti sc";
+    src: url('/font/stmeiti_medium.ttf');
+}
+
+@font-face
+{
+    font-family: "calibri";
+    src: url('/font/calibri.ttf');
+}
+
+
+/**
+*General Position
+*/
+
+html, body
+{
+    height: 100%;
+    margin: 0px;
+   padding: 0px;
+   outline: 0px;
+}
+
+.global
+{
+    width: 80%;
+    min-width: 750px;
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    height: 100%
+}
+
+.sommaire
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav,.header
+{
+    position: fixed;
+}
+
+.nav
+{
+    margin-top: 260px;
+    border-left: solid 1px black;
+}
+
+.texte
+{
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+li
+{
+    margin-left: -20px;
+}
+
+.col_droite
+{
+    display: inline-block;
+    min-width: 500px;
+    max-width: 1600px;
+    width: 83%;
+    margin-left: 230px;
+    margin-top: -70px;
+    margin-bottom: -25px;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-left: 1px solid black;
+    vertical-align: top;
+}
+
+.court
+{
+    height: 100%;
+}
+
+.infos
+{
+    margin-top: 50px;
+}
+
+.article
+{
+    width: 600px;
+}
+
+.strong
+{
+    display:block;
+    margin-top: 20px;
+}
+
+.image
+{
+    width:98.5%;
+    min-width: 500px;
+    max-width: 2000px;
+}
+
+.def
+{
+    max-width: 850px;
+}
+
+.icones
+{
+    width: 3cm;
+    margin-right: 0.5cm;
+    margin-bottom: 0.5cm;
+}
+
+.bloc_icones
+{
+    padding-right: 1.5%;
+    margin-top: 1cm;
+}
+
+.titre_second
+{
+    margin-top: -60px;
+}
+
+.titre_second, .titre_principal, .bloc_icones, .image, .article, .infos, .debutexpo
+{
+    padding-left: 1.5%;
+}
+
+/**
+*Textes decorations
+*/
+
+.texte
+{
+    font-family: gulim;
+    font-size: 14px;
+    text-align: justify;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+.article
+{
+    text-align: justify;
+    font-family: calibri;
+    color: #848284;
+}
+
+.strong
+{
+    color: black;
+    font-family: heiti sc;
+}
+
+.titre_principal
+{
+    font-family: Heiti SC;
+    font-size: 100px;
+}
+
+.titre_second
+{
+    font-family: Heiti SC;
+    font-size: 30px;
+    color: #848284;
+}
+
+
+/**
+*Liens
+*/
+
+.lien
+{
+    display: block;
+    color: rgb(82, 131, 147);
+    line-height: 20px;
+}
+
+.lien:hover, .lien_col:hover
+{
+    color: rgb(82, 109, 147);
+    font-size: 20px;
+}
+
+.lien, .lien:hover
+{
+   text-decoration: none;
+   font-family: gulim;
+}
+
+.lien_col
+{
+    color: rgb(82, 109, 147);
+    text-decoration: none;
+    font-family: Heiti SC;
+}
+
+.lien_col:hover
+{
+    text-decoration: none;
+}
+
+.debutexpo
+{
+    width: 5cm;
+    margin-top: 20px;
+}
+
+/**
+Listes
+**/
+
+.liste_etudiant
+{
+    width: 55%;
+    float: right;
+    padding-bottom: 20px;
+
+}
+
+
+        @media screen and (max-width: 1000px)
+        {
+            /**
+            *Positionnement global
+            */
+
+            .global
+            {
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+                min-width: 500px;
+                max-width: 1000px;
+
+            }
+
+            .col_droite
+            {
+                display: block;
+                margin-top: 0;
+                border: none;
+                margin-left: 0;
+                padding-left: 0;
+                width: 100%;
+                padding-top: 60px;
+                padding-bottom: 20px;
+            }
+
+            .nav,.header
+            {
+                position: absolute;
+            }
+
+            .nav
+            {
+                margin-top: -25px;
+                margin-left: 50px;
+                width: 90%;
+                border: none;
+                text-align: center;
+
+            }
+
+
+
+
+            /**
+            *Images et icones
+            */
+
+            .logo
+            {
+                width: 1.5cm;
+                margin-top:-40px;
+                margin-left: 20px;
+            }
+
+            .sommaire
+            {
+                display: block;
+            }
+
+            .debutexpo
+            {
+                width: 5cm;
+                margin-left: auto;
+                margin-left:20px;
+                margin-top: 20px;
+            }
+
+            .bloc_icones
+            {
+                clear: both;
+            }
+
+            /**
+            *Textes
+            */
+
+            .texte:hover
+            {
+                font-size: 12px;
+            }
+
+            .nav .lien
+            {
+                display: inline;
+                margin-right: 20px;
+            }
+
+            .lien:hover, .lien_col:hover
+            {
+                color: rgb(82, 109, 147);
+                font-size: 16px;
+            }
+
+            .texte
+            {
+                width: 95%;
+                text-align: right;
+                font-size: 9px;
+            }
+
+            .article
+            {
+                width: 100%;
+            }
+
+            /**
+            *Listes*/
+
+            .liste_etudiant
+            {
+                float: none;
+                width: 100%;
+            }
+
+            .liste_auteurs
+            {
+                float: left;
+                width:50%;
+            }
+
+            .liste_expo
+            {
+                padding-top: 15px;
+            }
+
+
+
+        }
+
+@media screen and (max-width: 850px)
+{
+
+    /**
+    *Positionnement global
+    */
+
+    .col_droite
+    {
+        padding-top: 80px;
+        padding-bottom: 20px;
+        min-width: 0;
+
+     }
+
+     /**
+     *Menu
+     */
+
+    .nav
+    {
+        width: auto;
+        text-align: right;
+        right: 0;
+        top : -10px;
+
+    }
+
+    .nav .lien
+    {
+        display: block;
+
+        font-size: 16px;
+
+    }
+
+
+
+}
+
+
+        @media screen and (max-width: 480px)
+        {
+            /**
+            *Positionnement global
+            */
+
+            .global
+            {
+                width: auto;
+                margin-left: 5px;
+                margin-right: 5px;
+                min-width: 0;
+                max-width: 480px;
+
+            }
+
+            .image, .article
+            {
+                min-width: 0;
+                /*min-width: 150px;
+                max-width: 480px;*/
+                padding-right:10px;
+            }
+
+            /**
+            *Liens
+            */
+
+            .lien:hover, .lien_col:hover
+            {
+                color: rgb(82, 109, 147);
+                font-size: 16px;
+            }
+
+            /**
+            *Images et icones
+            */
+
+            .icones
+            {
+                width: 2cm;
+            }
+
+        }
+
+@media screen and (max-device-width: 480px) /* Pour les mobiles à vérifier !!*/
+{
+    /**
+    *Positionnement global
+    **/
+
+    .global
+    {
+        width: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+        min-width: 0;
+        max-width: 480px;
+
+    }
+
+    /**
+    *Liens
+    */
+
+    .lien:hover, .lien_col:hover
+    {
+        color: rgb(82, 109, 147);
+        font-size: 16px;
+    }
+
+    /**
+    *Images et icones
+    */
+
+    .image, .article
+    {
+        min-width: 0;
+        padding-right:10px;
+    }
+
+    .icones
+    {
+        width: 2cm;
+    }
+
+}
