@@ -11,7 +11,7 @@
                         <li class="lien"><a class="lien" href="/?r=archives">Archives</a></li>
                         <li class="lien"><a class="lien" href="/?r=casier">Casier itinérant</a></li>
                         <li class="lien"><a class="lien" href="/?r=about"> À propos</a></li>
-                        <li class="lien"><a class="lien" href="/?=contact">Contact</a></li>
+                        <li class="lien"><a class="lien" href="/?r=contact">Contact</a></li>
                         <li class="lien"><a class="lien break" href="/?r=external_link">Liens externes</a></li>
 
                     </ul>

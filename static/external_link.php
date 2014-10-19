@@ -27,7 +27,12 @@
 
                     <aside>
                         <ul class="liste">
-                            <li><a class="lien" href="http://olb-illustration.blogspot.fr/">Olivier Le Borgne</a></li>
+                            <li>
+                                <a href="http://caboisett.wix.com/" class="lien">Caboisett</a>
+                            </li>
+                            <li>
+                                <a class="lien" href="http://olb-illustration.blogspot.fr/">Olivier Le Borgne</a>
+                            </li>
                         </ul>
                     </aside>
 

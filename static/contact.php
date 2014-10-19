@@ -5,7 +5,7 @@
     <article class="article about">
         <p>Vous pouvez nous joindre à tous moments l'adresse mail du casier : <a class="lien" href="mailto:lecasier9@free.fr">lecasier9@free.fr</a></p>
 
-        <?php
+<?php
     if(isset($_GET['email'])) // On vérifie que la variable $_GET['email'] existe.
     {
 
@@ -88,6 +88,26 @@
         <?php
             }
         ?>
+
+
+
+        <p>Toute candidature sera limitée à un travail par étudiant de l’Esam en deuxième année sur le thème de la prochaine exposition communiquée un mois à l’avance sur la page Facebook au moment de la mise en ligne de l’exposition la précédant. </p>
+
+        <strong class="strong">L’email de candidature devra comporter :</strong>
+
+        <ul>
+            <li class="liste">Objet du mail : Candidature : (thème de l’exposition à venir) ; Nom Prénom</li>
+            <li class="liste">Texte rapide descriptif sur le travail général de l'étudiant (note d'intention)</li>
+            <li class="liste">Nom du travail présenté</li>
+            <li class="liste">Texte sur le travail présenté</li>
+            <li class="liste">Photographies (300pixel/cm ; largeur minimum : 1200px) ; Vidéo (tout format, bonne qualité) ; Audio (tout format, bonne qualité)</li>
+            <li class="liste">Les dimensions voulu de présentation du travail (si besoin est)</li>
+            <li class="liste">Les dimensions réelles du travail (si besoin est)</li>
+            <li class="liste">Matériaux et technique(s)</li>
+            <li class="liste">Date de réalisation</li>
+        </ul>
+
+        <p>Pour tous fichiers un peu lourd, n'hésitez pas à utiliser le site <a class="lien" href="http://wetransfer.com">WeTransfer.</a></p>
 
     </article>
 

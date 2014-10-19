@@ -98,7 +98,7 @@ li
     margin-top: 50px;
 }
 
-.article
+.article, .text_col
 {
     width: 600px;
 }
@@ -107,6 +107,16 @@ li
 {
     display:block;
     margin-top: 20px;
+}
+
+.titre_second
+{
+    margin-top: -60px;
+}
+
+.titre_second, .titre_principal, .bloc_icones, .image, .article, .infos, .debutexpo
+{
+    padding-left: 1.5%;
 }
 
 .image
@@ -121,6 +131,10 @@ li
     max-width: 850px;
 }
 
+/**
+* Icones
+*/
+
 .icones
 {
     width: 3cm;
@@ -134,15 +148,20 @@ li
     margin-top: 1cm;
 }
 
-.titre_second
+.col_table
 {
-    margin-top: -60px;
+    width: 170px;
+    padding-right: 20px;
 }
 
-.titre_second, .titre_principal, .bloc_icones, .image, .article, .infos, .debutexpo
+.table
 {
+    padding-top: 10px;
     padding-left: 1.5%;
 }
+
+
+
 
 /**
 *Textes decorations
@@ -160,7 +179,7 @@ li
     list-style-type: none;
 }
 
-.article
+.article, .text_col
 {
     text-align: justify;
     font-family: calibri;
@@ -314,6 +333,11 @@ Listes
             .bloc_icones
             {
                 clear: both;
+            }
+
+            .col_table
+            {
+                width: 150px;
             }
 
             /**

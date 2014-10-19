@@ -4,31 +4,34 @@
 
     <aside class="liste_etudiant">
         <ul class="liste_auteurs">
-            <li><a class="lien" href="">Etudiant 1</a></li>
-            <li><a class="lien" href="">Etudiant 2</a></li>
-            <li><a class="lien" href="">Etudiant 3</a></li>
-            <li><a class="lien" href="">Etudiant 4</a></li>
-            <li><a class="lien" href="">Etudiant 5</a></li>
+            <li class="strong">Etudiants</li>
+            <li><a class="lien" href="/?r=mathilde_bennett">Malthilde Bennett</a></li>
+            <li><a class="lien" href="/?r=maylis_breton">Maylis Breton</a></li>
+            <li><a class="lien" href="/?r=melusine_caillaud">Mélusine Caillaud</a></li>
+            <li><a class="lien" href="/?r=jeanne_dubois">Jeanne Dubois-Pacquet</a></li>
+            <li><a class="lien" href="/?r=floriane_grosset">Floriane Grosset</a></li>
+            <li><a class="lien" href="/?r=camille_guillaud">Camille Guillaud</a></li>
+            <li><a class="lien" href="/?r=lola_jacrot">Lola Jacrot</a></li>
+            <li><a class="lien" href="/?r=woorim_moon">Woorim Moon</a></li>
+            <li><a class="lien" href="/?r=camille_ragnaud">Camille Ragnaud</a></li>
+
+
+
+
+
 
         </ul>
 
         <ul class="liste_expo">
+            <li class="strong">Expositions</li>
             <li><a class="lien" href="/?r=traces">Juin 2014 : Traces</a></li>
             <li><a class="lien" href="/?r=organique">Mai 2014 : Organique</a></li>
         </ul>
     </aside>
 
     <aside class="bloc_icones">
-        <?php
-                if (!empty($_routes[$_r]['archives'])) {
-                    include_once ROOT_DIR . '/vues/menu_organique.php' ;
-                }
-                ?>
-        <?php
-                if (!empty($_routes[$_r]['archives'])) {
-                    include_once ROOT_DIR . '/vues/menu_traces.php' ;
-                }
-                ?>
+        <?php require_once ROOT_DIR . '/static/menu_organique.php'; ?>
+        <?php require_once ROOT_DIR . '/static/menu_traces.php'; ?>
 
     </aside>
 </div>

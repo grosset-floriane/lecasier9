@@ -1,6 +1,27 @@
 <?php
+/**
+ * Description :
+ *
+ * PHP version 5
+ *
+ * @category Script_-_Main_Frame
+ * @package  No
+ * @author   Maxime GROSSET <contact@mail.com>
+ * @license  tag in file comment
+ * @link     No
+ */
+session_start();
+ob_start(); // required for not sending header automaticaly
 
-define('ROOT_DIR', dirname(__FILE__));
+/*global
+    $_routes, $_config
+*/
+
+define('ROOT_DIR', dirname(dirname(__FILE__)));
+define('HTTP_HOST', $_SERVER['HTTP_HOST']);
+
+ini_set('log_errors', 'on');
+ini_set('error_log', ROOT_DIR . '/log/php/php_error.log');
 
 /**
  * Description :
@@ -24,408 +45,115 @@ function redirect ($url)
     }
 }
 
-//redirect('/construction.html');
+//require_once ROOT_DIR . '/connexionBdd.inc.php';  // Connexion a la base de donnee MySQL
 
-// Modules - Views - App
-// ---------------------
-$_routes = array(
-    'welcome' => array(
-        'isView' => true,
-        'title' => 'Le Casier 9',
-        'assets' => array(
-            'css' => array(
-                'welcome',
-            ),
-        ),
-        'path' => '/vues/welcome.php',
-        'menu' => ''
-    ),
+require_once ROOT_DIR . '/config/routes.php';
+//require_once ROOT_DIR . '/config/assets.php';
 
-    'galerie' => array(
-        'isView' => true,
-        'title' => 'Sommaire',
-        'assets' => array(
-            'css' => array(
-                'sommaire'
-            ),
-        ),
-        'path' => '/vues/sommaire.php',
-        'menu' => '',
-    ),
+// Get global config
+// -----------------
+$_configPath = ROOT_DIR . '/config/config.inc.php';
 
-    'casier' => array(
-        'isView' => true,
-        'title' => 'Casier itinérant',
-        'assets' => array(
-            'css' => array(
-                'casier'
-            ),
-        ),
-        'path' => '/vues/casier.php',
-        'menu' => 'casier',
-    ),
+if (file_exists($_configPath)) {
+    include_once $_configPath;
+} else {
+    die("Global config file is missing.");
+}
 
-    'about' => array(
-        'isView' => true,
-        'title' => 'A propos',
-        'assets' => array(
-            'css' => array(
-                'about'
-            ),
-        ),
-        'path' => '/vues/about.php',
-        'menu' => 'about',
-        ),
+$appTitle = '';
+$appSubTitle = '';
+$copyRightText = '';
 
-    'external_link' => array(
-        'isView' => true,
-        'title' => 'Liens externes',
-        'assets' => array(
-            'css' => array(
-                'external_link'
-            ),
-        ),
-        'path' => '/vues/external_link.php',
-        'menu' => 'external_link',
-        ),
+if (!empty($_config['app'])) {
+    $appConfig = $_config['app'];
+    $appTitle = isset($appConfig['title']) ? $appConfig['title'] : '';
+    $appSubTitle = isset($appConfig['sub_title']) ? $appConfig['sub_title'] : '';
+    $copyRightText = isset($appConfig['copy_right_text']) ? $appConfig['copy_right_text'] : '';
+}
 
-    'contact' => array(
-        'isView' => true,
-        'title' => 'Contact',
-        'assets' => array(
-            'css' => array(
-                'contact'
-            ),
-        ),
-        'path' => '/vues/contact.php',
-        'menu' => 'contact',
-        ),
-
-    'archives' => array(
-        'isView' => true,
-        'title' => 'Archives',
-        'assets' => array(
-            'css' => array(
-                'archives'
-            ),
-        ),
-        'path' => '/vues/archives.php',
-        'menu' => 'archives',
-        ),
-
-
-
-
-
-
-
-
-
-
-
-
-    'camille_guillaud' => array(
-        'isView' => true,
-        'title' => 'Camille Guillaud',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/.php',
-        'menu' => '',
-        ),
-
-    'lola_jacrot' => array(
-        'isView' => true,
-        'title' => 'Lola Jacrot',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/.php',
-        'menu' => '',
-        ),
-
-    'camille_ragnaud' => array(
-        'isView' => true,
-        'title' => 'Camille Ragnaud',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/.php',
-        'menu' => '',
-        ),
-
-    'woorim_moon' => array(
-        'isView' => true,
-        'title' => 'Woorim Moon',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/.php',
-        'menu' => '',
-        ),
-
-    'melusine_caillaud' => array(
-        'isView' => true,
-        'title' => 'Mélusine Caillaud',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/.php',
-        'menu' => '',
-        ),
-
-    'jeanne_dubois' => array(
-        'isView' => true,
-        'title' => 'Jeanne Dubois-Pacquet',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/.php',
-        'menu' => '',
-        ),
-
-    'maylis_breton' => array(
-        'isView' => true,
-        'title' => 'Maylis Breton',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/.php',
-        'menu' => '',
-        ),
-
-    'floriane_grosset' => array(
-        'isView' => true,
-        'title' => 'Floriane Grosset',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/.php',
-        'menu' => '',
-        ),
-
-    'mathilde_bennett' => array(
-        'isView' => true,
-        'title' => 'Mathilde Bennett',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/.php',
-        'menu' => '',
-        ),
-
-
-
-
-
-
-
-    'reveries' => array(
-        'isView' => true,
-        'title' => 'Rêveries',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/reveries.php',
-        'menu' => '',
-        ),
-
-    'chou' => array(
-        'isView' => true,
-        'title' => 'Empreintes de chou rouge',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/chou.php',
-        'menu' => '',
-        ),
-
-    'ombres' => array(
-        'isView' => true,
-        'title' => 'Ombres',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/ombres.php',
-        'menu' => '',
-        ),
-
-    'trajets' => array(
-        'isView' => true,
-        'title' => 'Trajets de poche',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/.php',
-        'menu' => '',
-        ),
-
-    'parcours' => array(
-        'isView' => true,
-        'title' => 'Parcours visuel',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/parcours.php',
-        'menu' => '',
-        ),
-
-    'cellules' => array(
-        'isView' => true,
-        'title' => 'Cellules de mort',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/cellules.php',
-        'menu' => '',
-        ),
-
-    'ecorche' => array(
-        'isView' => true,
-        'title' => 'Ecorché',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/ecorche.php',
-        'menu' => '',
-        ),
-
-    'racines' => array(
-        'isView' => true,
-        'title' => 'Racines',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/racines.php',
-        'menu' => '',
-        ),
-
-    'phaeophyceae' => array(
-        'isView' => true,
-        'title' => 'Phaeophyceae',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/phaeophyceae.php',
-        'menu' => '',
-        ),
-
-    'a_travers' => array(
-        'isView' => true,
-        'title' => 'A travers',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/a_travers.php',
-        'menu' => '',
-        ),
-
-    'arbrologie' => array(
-        'isView' => true,
-        'title' => 'Arbrologie',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/arbrologie.php',
-        'menu' => '',
-        ),
-
-    'un_autre' => array(
-        'isView' => true,
-        'title' => 'L\'un dans l\'autre',
-        'assets' => array(
-            'css' => array(
-                ''
-            ),
-        ),
-        'path' => '/vues/un_autre.php',
-        'menu' => '',
-        ),
-
-
-);
 
 $_r = !empty($_GET['r']) ? $_GET['r'] : 'welcome';
+$_r = !empty($_POST['r']) ? $_POST['r'] : $_r;
 
+// Check if the route exist
+if (!array_key_exists($_r, $_routes)) {
+    $_r = 'status_404';
+    redirect('http://' . HTTP_HOST . '/index.php?r=' . $_r);
+}
 
-$assetsRouteCss = '';
+// If the route is a Script
+if (!empty($_routes[$_r]['isScript'])) {
+    //include_once ROOT_DIR . '/api/globals.php';
+    include_once ROOT_DIR . $_routes[$_r]['path'];
+    exit;
+}
+
+// Manage assets (js and css)
+// --------------------------
+//$assetsJs = '';
+
+/*if (!empty($_assets['js'])) {
+    foreach ($_assets['js'] as $key => $pathAsset) {
+        $assetsJs .= '<script type="text/javascript" src="/js/' . $pathAsset . '.js"></script>';
+    }
+}*/
+
+$assetsCss = '';
+
+if (!empty($_assets['css'])) {
+    foreach ($_assets['css'] as $key => $pathAsset) {
+        $assetsCss= '<link rel="stylesheet" href="/css/' . $pathAsset . '.css" type="text/css" media="screen"/>';
+    }
+}
+
+// Manage route assets (js and css)
+// --------------------------------
+/*$assetsRouteJs = '';
+
+if (!empty($_routes[$_r]['assets']) && !empty($_routes[$_r]['assets']['js'])) {
+    foreach ($_routes[$_r]['assets']['js'] as $key => $pathAsset) {
+        $assetsRouteJs .= '<script type="text/javascript" src="/js/' . $pathAsset . '.js"></script>';
+    }
+}*/
+
+/*$assetsRouteCss = '';
 
 if (!empty($_routes[$_r]['assets']) && !empty($_routes[$_r]['assets']['css'])) {
     foreach ($_routes[$_r]['assets']['css'] as $key => $pathAsset) {
         $assetsRouteCss .= '<link rel="stylesheet" href="/css/' . $pathAsset . '.css" type="text/css" media="screen"/>';
     }
-}
+}*/
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
-        <meta charset="utf-8" />
-        <?php
-                if (!empty($_routes[$_r]['link'])) {
-                    include_once ROOT_DIR . '/vues/link.php' ;
-                }
-                ?>
+        <meta charset="utf-8">
+        <title>
+<?php if (!empty($_routes[$_r]['title'])) {
+            echo $_routes[$_r]['title'];
+} ?>
+        </title>
 
-        <title><?php echo $_routes[$_r]['title'] ?></title>
+        <?php require_once ROOT_DIR . '/static/link.php'; ?>
+        <!-- CSS //-->
+        <?php echo $assetsCss; ?>
         <link rel="stylesheet" href="/css/global.css" type="text/css" media="screen"/>
-        <?php echo $assetsRouteCss; ?>
+
     </head>
-
     <body>
+
         <div class="global">
-            <?php
-                    if (!empty($_routes[$_r]['menu'])) {
-                        include_once ROOT_DIR . '/vues/menu.php';
-                    }
-                    ?>
+<?php require_once ROOT_DIR . '/static/menu.php'; ?>
 
-            <?php
-                if (!empty($_routes[$_r]['path'])) {
-                    include_once ROOT_DIR . $_routes[$_r]['path'];
-                 }
-            ?>
+<?php
+if (!empty($_routes[$_r]['path'])) {
+    include_once ROOT_DIR . $_routes[$_r]['path'];
+}
+?>
 
-        </div>
+
+</div>
+
     </body>
-<html>
+</html>
