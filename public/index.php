@@ -48,7 +48,7 @@ function redirect ($url)
 //require_once ROOT_DIR . '/connexionBdd.inc.php';  // Connexion a la base de donnee MySQL
 
 require_once ROOT_DIR . '/config/routes.php';
-//require_once ROOT_DIR . '/config/assets.php';
+require_once ROOT_DIR . '/config/assets.php';
 
 // Get global config
 // -----------------
@@ -90,39 +90,39 @@ if (!empty($_routes[$_r]['isScript'])) {
 
 // Manage assets (js and css)
 // --------------------------
-//$assetsJs = '';
+$assetsJs = '';
 
-/*if (!empty($_assets['js'])) {
+if (!empty($_assets['js'])) {
     foreach ($_assets['js'] as $key => $pathAsset) {
         $assetsJs .= '<script type="text/javascript" src="/js/' . $pathAsset . '.js"></script>';
     }
-}*/
+}
 
 $assetsCss = '';
 
 if (!empty($_assets['css'])) {
     foreach ($_assets['css'] as $key => $pathAsset) {
-        $assetsCss= '<link rel="stylesheet" href="/css/' . $pathAsset . '.css" type="text/css" media="screen"/>';
+        $assetsCss .= '<link rel="stylesheet" href="/css/' . $pathAsset . '.css" type="text/css" media="screen"/>';
     }
 }
 
 // Manage route assets (js and css)
 // --------------------------------
-/*$assetsRouteJs = '';
+$assetsRouteJs = '';
 
 if (!empty($_routes[$_r]['assets']) && !empty($_routes[$_r]['assets']['js'])) {
     foreach ($_routes[$_r]['assets']['js'] as $key => $pathAsset) {
         $assetsRouteJs .= '<script type="text/javascript" src="/js/' . $pathAsset . '.js"></script>';
     }
-}*/
+}
 
-/*$assetsRouteCss = '';
+$assetsRouteCss = '';
 
 if (!empty($_routes[$_r]['assets']) && !empty($_routes[$_r]['assets']['css'])) {
     foreach ($_routes[$_r]['assets']['css'] as $key => $pathAsset) {
         $assetsRouteCss .= '<link rel="stylesheet" href="/css/' . $pathAsset . '.css" type="text/css" media="screen"/>';
     }
-}*/
+}
 ?>
 
 <!DOCTYPE html>
@@ -137,23 +137,29 @@ if (!empty($_routes[$_r]['assets']) && !empty($_routes[$_r]['assets']['css'])) {
 
         <?php require_once ROOT_DIR . '/static/link.php'; ?>
         <!-- CSS //-->
-        <?php echo $assetsCss; ?>
-        <link rel="stylesheet" href="/css/global.css" type="text/css" media="screen"/>
+        <?php echo $assetsCss ?>
+        <?php echo $assetsRouteCss ?>
+
+        <!--JS -->
+        <?php echo $assetsJs ?>
+        <?php echo $assetsRouteJs ?>
 
     </head>
     <body>
 
         <div class="global">
+
 <?php require_once ROOT_DIR . '/static/menu.php'; ?>
 
+            <div class="col_droite">
 <?php
 if (!empty($_routes[$_r]['path'])) {
     include_once ROOT_DIR . $_routes[$_r]['path'];
 }
 ?>
 
-
-</div>
+            </div>
+        </div>
 
     </body>
 </html>

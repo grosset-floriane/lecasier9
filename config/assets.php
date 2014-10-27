@@ -16,6 +16,7 @@ $_assets = array(
     // --
     'js' => array(
         // Vendors
+        'vendors/jquery/jquery',
     ),
 
     // CSS

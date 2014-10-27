@@ -63,6 +63,9 @@ $_routes += array(
         'isView' => true,
         'title' => 'Contact',
         'assets' => array(
+            'js' => array(
+                'contact/contact'
+            ),
             'css' => array(
             ),
         ),
@@ -92,6 +95,9 @@ $_routes += array(
 
 
 
+
+
+
     'mathilde_bennett' => array(
         'isView' => true,
         'title' => 'Mathilde Bennett',
@@ -102,14 +108,14 @@ $_routes += array(
         'path' =>'/static/etudiant/mathilde_bennett.php',
     ),
 
-    'melusine_caillaud' => array(
+    'melusine_caillau' => array(
         'isView' => true,
-        'title' => 'Mélusine Caillaud',
+        'title' => 'Mélusine Caillau',
         'assets' => array(
             'css' => array(
             ),
         ),
-        'path' =>'/static/etudiant/melusine_caillaud.php',
+        'path' =>'/static/etudiant/melusine_caillau.php',
     ),
 
     'jeanne_dubois' => array(
@@ -182,137 +188,160 @@ $_routes += array(
 
 
 
-    '' => array(
+
+
+    'cellules' => array(
         'isView' => true,
-        'title' => '',
+        'title' => 'Cellules de mort',
         'assets' => array(
             'css' => array(
             ),
         ),
-        'path' =>'/static/.php',
+        'path' =>'/static/projets/cellules.php',
     ),
 
-    '' => array(
+    'ecorche' => array(
         'isView' => true,
-        'title' => '',
+        'title' => 'Ecorché',
         'assets' => array(
             'css' => array(
             ),
         ),
-        'path' =>'/static/.php',
+        'path' =>'/static/projets/ecorche.php',
     ),
 
-    '' => array(
+    'racines' => array(
         'isView' => true,
-        'title' => '',
+        'title' => 'Racines',
         'assets' => array(
             'css' => array(
             ),
         ),
-        'path' =>'/static/.php',
+        'path' =>'/static/projets/racines.php',
     ),
 
-    '' => array(
+    'phaeophyceae' => array(
         'isView' => true,
-        'title' => '',
+        'title' => 'Phaeophyceae',
         'assets' => array(
             'css' => array(
             ),
         ),
-        'path' =>'/static/.php',
+        'path' =>'/static/projets/phaeophyceae.php',
     ),
 
-    '' => array(
+    'a_travers' => array(
         'isView' => true,
-        'title' => '',
+        'title' => 'À travers',
         'assets' => array(
             'css' => array(
             ),
         ),
-        'path' =>'/static/.php',
+        'path' =>'/static/projets/a_travers.php',
     ),
 
-    '' => array(
+    'arbrologie' => array(
         'isView' => true,
-        'title' => '',
+        'title' => 'Arbrologie',
         'assets' => array(
             'css' => array(
             ),
         ),
-        'path' =>'/static/.php',
+        'path' =>'/static/projets/arbrologie.php',
     ),
 
-    '' => array(
+    'un_autre' => array(
         'isView' => true,
-        'title' => '',
+        'title' => 'L\' un dans l\'autre',
         'assets' => array(
             'css' => array(
             ),
         ),
-        'path' =>'/static/.php',
+        'path' =>'/static/projets/un_autre.php',
     ),
 
-    '' => array(
+    'reveries' => array(
         'isView' => true,
-        'title' => '',
+        'title' => 'Rêveries',
         'assets' => array(
             'css' => array(
             ),
         ),
-        'path' =>'/static/.php',
+        'path' =>'/static/projets/reveries.php',
     ),
 
-    '' => array(
+    'chou' => array(
         'isView' => true,
-        'title' => '',
+        'title' => 'Empreintes de chou',
         'assets' => array(
             'css' => array(
             ),
         ),
-        'path' =>'/static/.php',
+        'path' =>'/static/projets/chou.php',
     ),
 
-    '' => array(
+    'ombres' => array(
         'isView' => true,
-        'title' => '',
+        'title' => 'Ombres',
         'assets' => array(
             'css' => array(
             ),
         ),
-        'path' =>'/static/.php',
+        'path' =>'/static/projets/ombres.php',
     ),
 
-    '' => array(
+    'trajets' => array(
         'isView' => true,
-        'title' => '',
+        'title' => 'Trajets de poche',
         'assets' => array(
             'css' => array(
             ),
         ),
-        'path' =>'/static/.php',
+        'path' =>'/static/projets/trajets.php',
+    ),
+
+    'parcours' => array(
+        'isView' => true,
+        'title' => 'Parcours visuel',
+        'assets' => array(
+            'css' => array(
+            ),
+        ),
+        'path' =>'/static/projets/parcours.php',
+    ),
+
+    'machine' => array(
+        'isView' => true,
+        'title' => 'La machine, l\'oiseau et l\'ananas',
+        'assets' => array(
+            'css' => array(
+            ),
+        ),
+        'path' =>'/static/projets/machine.php',
+    ),
+
+    'os' => array(
+        'isView' => true,
+        'title' => 'Os',
+        'assets' => array(
+            'css' => array(
+                'os'
+            ),
+        ),
+        'path' =>'/static/projets/os.php',
     ),
 
 );
 
 
+
+
 // API - Scripts
 // -------------
 $_routes += array(
-    'clearCache_s' => array(
+    'inscription_s' => array(
         'isScript' => true,
-        'path' => '/api/script/clearCache_json.php',
-    ),
-    'deletePic_s' => array(
-        'isScript' => true,
-        'path' => '/api/script/deletePic_json.php',
-    ),
-    'getFolderList_s' => array(
-        'isScript' => true,
-        'path' => '/api/script/getFolderList_json.php',
-    ),
-    'getRandomPic_s' => array(
-        'isScript' => true,
-        'path' => '/api/script/getRandomPic_json.php',
+        'path' => '/api/script/inscription_json.php',
     ),
 );
 // Static - Views - Errors
