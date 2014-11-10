@@ -1,7 +1,7 @@
-<img class="image" src="/img/projets/trajets.jpg" alt="Trajets de poche"/>
+<img class="image" src="/img/projets/traces/trajets.jpg" alt="Trajets de poche"/>
 
-<aside class="infos">
-    <p class="strong"><a class="lien_col"href="index.php?r=lola_jacrot">Lola Jacrot</a>, Trajets de poche</p>
+<aside class="article">
+    <p class="strong"><a class="lien_col"href="/?r=lola_jacrot">Lola Jacrot</a>, Trajets de poche</p>
     <p>
         Plans, papier calque, fil, Tailles variables
     </p>
@@ -12,10 +12,10 @@
 </article>
 
 
+<p class="strong">
+    Autres travaux de l'exposition Traces :
+</p>
+
 <aside class="bloc_icones">
-        <?php
-            if (!empty($_routes[$_r]['archives'])) {
-                include_once ROOT_DIR . '/vues/menu_traces.php' ;
-            }
-        ?>
+        <?php require_once ROOT_DIR . '/static/menu_traces.php'; ?>
 </aside>

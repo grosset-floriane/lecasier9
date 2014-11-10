@@ -1,7 +1,7 @@
-<img class="image" src="/img/projets/ombres.jpg" alt="Ombres"/>
+<img class="image" src="/img/projets/traces/ombres.jpg" alt="Ombres"/>
 
-<aside class="infos">
-    <p class="strong"><a class="lien_col" href="index.php?r=floriane_grosset">Floriane Grosset, </a>Ombres</p>
+<aside class="article">
+    <p class="strong"><a class="lien_col" href="/?r=floriane_grosset">Floriane Grosset, </a>Ombres</p>
     <p>
         Sérigraphie, crayon, encre et pastel sur papier, 42x29,7 cm, 65x50 cm, 40,5x30 cm, Mars 2014
     </p>
@@ -12,10 +12,19 @@
 </article>
 
 
+<p class="strong">
+    Autres travaux de Floriane Grosset :
+</p>
+
 <aside class="bloc_icones">
-        <?php
-            if (!empty($_routes[$_r]['archives'])) {
-                include_once ROOT_DIR . '/vues/menu_traces.php' ;
-            }
-        ?>
+        <a href="/?r=ecorche"><img class="icones"src="/img/ico/ecorche_ico.png" alt="Ecorché"></a>
+</aside>
+
+
+<p class="strong">
+    Autres travaux de l'exposition Organique :
+</p>
+
+<aside class="bloc_icones">
+        <?php require_once ROOT_DIR . '/static/menu_traces.php'; ?>
 </aside>

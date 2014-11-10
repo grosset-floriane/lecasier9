@@ -1,7 +1,7 @@
-<img class="image" src="/img/projets/a_travers.jpg" alt="À travers"/>
+<img class="image" src="/img/projets/organique/a_travers.jpg" alt="À travers"/>
 
-<aside class="infos">
-    <p class="strong"><a class="lien_col"href="index.php?r=mathilde_bennett">Mathilde Bennett, </a>À travers</p>
+<aside class="article">
+    <p class="strong"><a class="lien_col"href="/?r=mathilde_bennett">Mathilde Bennett, </a>À travers</p>
     <p>
         Glace, oignon, peinture, 30x30 cm
     </p>
@@ -16,11 +16,19 @@ d'obtenir une réelle plaque. Illuminé, le morceau               de glace lais
 doivent apparaître.</p>
 </article>
 
+<p class="strong">
+    Autres travaux de Mathilde Bennett :
+</p>
 
 <aside class="bloc_icones">
-        <?php
-            if (!empty($_routes[$_r]['archives'])) {
-                include_once ROOT_DIR . '/vues/menu_organique.php' ;
-            }
-        ?>
+        <a href="/?r=machine"><img class="icones"src="/img/ico/machine_ico.png" alt="La machine, l'oiseau et l'ananas"></a>
+</aside>
+
+
+<p class="strong">
+    Autres travaux de l'exposition Organique :
+</p>
+
+<aside class="bloc_icones">
+        <?php require_once ROOT_DIR . '/static/menu_organique.php'; ?>
 </aside>

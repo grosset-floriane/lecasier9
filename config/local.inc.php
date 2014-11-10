@@ -15,8 +15,8 @@
 $_localConfig = array(
     'bdd' => array(
         'host' => 'localhost',
-        'name' => 'promeeting',
-        'port' => '3306',
+        'name' => 'lecasier9',
+        'port' => '8889',
         'login' => 'root',//à ajouter pour la connexion
         'pwd' => 'root'//à ajouter pour la connexion
     ),

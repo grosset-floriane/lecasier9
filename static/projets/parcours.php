@@ -1,18 +1,17 @@
+<img class="image" src="/img/projets/traces/parcours.jpg" alt="Parcours visuel"/>
 
-<img class="image" src="/img/projets/parcours.jpg" alt="Parcours visuel"/>
-
-<aside class="infos">
-    <p class="strong"><a class="lien_col"href="index.php?r=camille_ragnaud">Camille Ragnaud</a>, Parcours visuel</p>
+<aside class="article">
+    <p class="strong"><a class="lien_col"href="/?r=camille_ragnaud">Camille Ragnaud</a>, Parcours visuel</p>
     <p>
         Photographies argentique, 12 photographies de 16.5x11.5 cm, 2014
     </p>
 </aside>
 
+<p class="strong">
+    Autres travaux de l'exposition Traces :
+</p>
 
 <aside class="bloc_icones">
-        <?php
-            if (!empty($_routes[$_r]['archives'])) {
-                include_once ROOT_DIR . '/vues/menu_traces.php' ;
-            }
-        ?>
+        <?php require_once ROOT_DIR . '/static/menu_traces.php'; ?>
 </aside>
+

@@ -85,8 +85,56 @@ $_routes += array(
     ),
 
 
+    'sommaire' => array(
+            'isView' => true,
+            'title' => 'Sommaire',
+            'assets' => array(
+                'css' => array(
+                ),
+            ),
+            'path' =>'/static/sommaire.php'
+    ),
 
 
+    'status_403' => array(
+        'isView' => true,
+        'path' => '/public/errors/status_403.php',
+        'title' => 'Error 403',
+        'dont_check_auth' => true,
+    ),
+    'status_404' => array(
+        'isView' => true,
+        'path' => '/public/errors/status_404.php',
+        'title' => 'Error 404',
+        'dont_check_auth' => true,
+    ),
+
+
+
+
+
+
+
+
+    'organique' => array(
+            'isView' => true,
+            'title' => 'Organique',
+            'assets' => array(
+                'css' => array(
+                ),
+            ),
+            'path' =>'/static/organique.php'
+    ),
+
+    'traces' => array(
+            'isView' => true,
+            'title' => 'Traces',
+            'assets' => array(
+                'css' => array(
+                ),
+            ),
+            'path' =>'/static/traces.php'
+    ),
 
 
 
@@ -145,7 +193,7 @@ $_routes += array(
             'css' => array(
             ),
         ),
-        'path' =>'/static/camille_guillaud.php',
+        'path' =>'/static/etudiant/camille_guillaud.php',
     ),
 
     'lola_jacrot' => array(
@@ -177,6 +225,77 @@ $_routes += array(
         ),
         'path' =>'/static/etudiant/camille_ragnaud.php',
     ),
+
+    'juliette_guiot' => array(
+        'isView' => true,
+        'title' => 'Juliette Guiot',
+        'assets' => array(
+            'css' => array(
+            ),
+        ),
+        'path' =>'/static/etudiant/juliette_guiot.php',
+    ),
+
+    'arthur_billaud' => array(
+        'isView' => true,
+        'title' => 'Arthur Billaud',
+        'assets' => array(
+            'css' => array(
+            ),
+        ),
+        'path' =>'/static/etudiant/arthur_billaud.php',
+    ),
+
+    'sandy_kalaydjian' => array(
+        'isView' => true,
+        'title' => 'Sandy Kalaydjian',
+        'assets' => array(
+            'css' => array(
+            ),
+        ),
+        'path' =>'/static/etudiant/sandy_kalaydjian.php',
+    ),
+
+    'stanley_obobogo' => array(
+        'isView' => true,
+        'title' => 'Stanley Obobogo',
+        'assets' => array(
+            'css' => array(
+            ),
+        ),
+        'path' =>'/static/etudiant/stanley_obobogo.php',
+    ),
+
+    'rudy_dumas' => array(
+        'isView' => true,
+        'title' => 'Rudy Dumas Djandolo',
+        'assets' => array(
+            'css' => array(
+            ),
+        ),
+        'path' =>'/static/etudiant/rudy_dumas.php',
+    ),
+
+    'stanca_soare' => array(
+        'isView' => true,
+        'title' => 'Stanca Soare',
+        'assets' => array(
+            'css' => array(
+            ),
+        ),
+        'path' =>'/static/etudiant/stanca_soare.php',
+    ),
+
+    'maylis_breton' => array(
+        'isView' => true,
+        'title' => 'Maylïs Breton',
+        'assets' => array(
+            'css' => array(
+            ),
+        ),
+        'path' =>'/static/etudiant/maylis_breton.php',
+    ),
+
 
 
 
@@ -315,20 +434,92 @@ $_routes += array(
         'title' => 'La machine, l\'oiseau et l\'ananas',
         'assets' => array(
             'css' => array(
+                'machine'
             ),
         ),
         'path' =>'/static/projets/machine.php',
     ),
 
-    'os' => array(
+    'balaena' => array(
         'isView' => true,
-        'title' => 'Os',
+        'title' => 'Balaena',
         'assets' => array(
             'css' => array(
                 'os'
             ),
         ),
-        'path' =>'/static/projets/os.php',
+        'path' =>'/static/projets/balaena.php',
+    ),
+
+    'protecteurs' => array(
+        'isView' => true,
+        'title' => 'Les Protecteurs',
+        'assets' => array(
+            'css' => array(
+            ),
+        ),
+        'path' =>'/static/projets/protecteurs.php',
+    ),
+
+    'betes' => array(
+        'isView' => true,
+        'title' => 'Bêtes',
+        'assets' => array(
+            'css' => array(
+            ),
+        ),
+        'path' =>'/static/projets/betes.php',
+    ),
+
+    'aquariophiles' => array(
+        'isView' => true,
+        'title' => 'Tentatives aquariophiles',
+        'assets' => array(
+            'css' => array(
+                'aquariophiles'
+            ),
+        ),
+        'path' =>'/static/projets/aquariophiles.php',
+    ),
+
+    'ecrivain' => array(
+        'isView' => true,
+        'title' => 'L\'écrivain ou capricorne velutinus',
+        'assets' => array(
+            'css' => array(
+            ),
+        ),
+        'path' =>'/static/projets/ecrivain.php',
+    ),
+
+    'bestiaire' => array(
+        'isView' => true,
+        'title' => 'Bestiaire',
+        'assets' => array(
+            'css' => array(
+            ),
+        ),
+        'path' =>'/static/projets/bestiaire.php',
+    ),
+
+    'veau' => array(
+        'isView' => true,
+        'title' => 'Le veau',
+        'assets' => array(
+            'css' => array(
+            ),
+        ),
+        'path' =>'/static/projets/veau.php',
+    ),
+
+    'corde' => array(
+        'isView' => true,
+        'title' => 'La cinquième corde',
+        'assets' => array(
+            'css' => array(
+            ),
+        ),
+        'path' =>'/static/projets/corde.php',
     ),
 
 );
