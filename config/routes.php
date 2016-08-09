@@ -16,84 +16,260 @@ $_routes = array();
 $_routes += array(
     'welcome' => array(
         'isView' => true,
-        'title' => 'Le Casier 9',
+        'title' => 'Accueil',
         'assets' => array(
             'css' => array(
             ),
         ),
-        'path' =>'/static/welcome.php',
+        'path' =>'/static/accueil.php',
         'menu' => ''
     ),
 
-    'archives' => array(
+    'sommaire' => array(
         'isView' => true,
-        'title' => 'Archives',
+        'title' => 'Portfolio',
         'assets' => array(
             'css' => array(
             ),
         ),
-        'path' =>'/static/archives.php',
-        'menu' => 'archives'
-    ),
-
-    'casier' => array(
-        'isView' => true,
-        'title' => 'Casier Itinérant',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/casier.php',
+        'path' =>'/static/sommaire.php',
         'menu' => ''
     ),
 
     'about' => array(
         'isView' => true,
-        'title' => 'À propos',
+        'title' => 'A propos',
         'assets' => array(
             'css' => array(
             ),
         ),
         'path' =>'/static/about.php',
-        'menu' => 'about'
+        'menu' => ''
     ),
 
-
-    'contact' => array(
+    'route1' => array(
         'isView' => true,
-        'title' => 'Contact',
-        'assets' => array(
-            'js' => array(
-                'contact/contact'
-            ),
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/contact.php',
-        'menu' => 'contact'
-    ),
-
-    'external_link' => array(
-        'isView' => true,
-        'title' => 'Liens externes',
+        'title' => 'Route 1',
         'assets' => array(
             'css' => array(
-            ),
-        ),
-        'path' =>'/static/external_link.php',
-        'menu' => 'external_link'
-    ),
-
-
-    'sommaire' => array(
-            'isView' => true,
-            'title' => 'Sommaire',
-            'assets' => array(
-                'css' => array(
                 ),
             ),
-            'path' =>'/static/sommaire.php'
+        'path' => '/static/projets/route1.php',
+        'menu' => ''
     ),
+
+    'labyrinthe' => array(
+        'isView' => true,
+        'title' => 'Labyrinthe',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/projets/labyrinthe.php',
+        'menu' => ''
+    ),
+
+    'fuite' => array(
+        'isView' => true,
+        'title' => 'La fuite',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/projets/fuite.php',
+        'menu' => ''
+    ),
+
+    'blivre' => array(
+        'isView' => true,
+        'title' => 'Boîte-livre',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/projets/blivre.php',
+        'menu' => ''
+    ),
+
+    'bimage' => array(
+        'isView' => true,
+        'title' => 'Boîte-image',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/projets/bimage.php',
+        'menu' => ''
+    ),
+
+    '70miles' => array(
+        'isView' => true,
+        'title' => '70 miles à l\'heure',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/projets/70miles.php',
+        'menu' => ''
+    ),
+
+    'lanterne' => array(
+        'isView' => true,
+        'title' => 'Lanterne magique',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/projets/lanterne.php',
+        'menu' => ''
+    ),
+
+    'casier' => array(
+        'isView' => true,
+        'title' => 'Le Casier 9',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/projets/casier.php',
+        'menu' => ''
+    ),
+
+    'panoramique' => array(
+        'isView' => true,
+        'title' => 'Panoramique de poche',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/projets/panoramique.php',
+        'menu' => ''
+    ),
+
+    'trailer' => array(
+        'isView' => true,
+        'title' => 'Bande-annonce',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/projets/trailer.php',
+        'menu' => ''
+    ),
+
+    'corps_etranger' => array(
+        'isView' => true,
+        'title' => 'Corps Etranger',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/projets/corps_etranger.php',
+        'menu' => ''
+    ),
+
+    'casier' => array(
+        'isView' => true,
+        'title' => 'Le Casier 9',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/projets/casier.php',
+        'menu' => ''
+    ),
+
+    'batiments' => array(
+        'isView' => true,
+        'title' => 'Bâtiments impertubables',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/projets/batiments.php',
+        'menu' => ''
+    ),
+
+    'vu' => array(
+        'isView' => true,
+        'title' => 'Vu !',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/projets/vu.php',
+        'menu' => ''
+    ),
+
+    'objets' => array(
+        'isView' => true,
+        'title' => 'Objets trouvés',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/projets/objets.php',
+        'menu' => ''
+    ),
+
+    'photogrammes' => array(
+        'isView' => true,
+        'title' => 'Photogrammes',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/recherches/photogramme.php',
+        'menu' => ''
+    ),
+
+    'natale' => array(
+        'isView' => true,
+        'title' => 'Ville natale',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/recherches/natale.php',
+        'menu' => ''
+    ),
+
+    'relief' => array(
+        'isView' => true,
+        'title' => 'Lunettes à relief',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/recherches/relief.php',
+        'menu' => ''
+    ),
+
+    'pellicules' => array(
+        'isView' => true,
+        'title' => 'Film en pellicules',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/recherches/pellicules.php',
+        'menu' => ''
+    ),
+
+    'echangeur' => array(
+        'isView' => true,
+        'title' => 'Echangeur d\'autoroute',
+        'assets' => array(
+            'css' => array(
+                ),
+            ),
+        'path' => '/static/recherches/echangeur.php',
+        'menu' => ''
+    ),
+
+
+
+
 
 
     'status_403' => array(
@@ -112,365 +288,6 @@ $_routes += array(
 
 
 
-
-
-
-
-    'organique' => array(
-            'isView' => true,
-            'title' => 'Organique',
-            'assets' => array(
-                'css' => array(
-                ),
-            ),
-            'path' =>'/static/organique.php'
-    ),
-
-    'traces' => array(
-            'isView' => true,
-            'title' => 'Traces',
-            'assets' => array(
-                'css' => array(
-                ),
-            ),
-            'path' =>'/static/traces.php'
-    ),
-
-
-
-
-
-
-
-
-
-
-
-    'mathilde_bennett' => array(
-        'isView' => true,
-        'title' => 'Mathilde Bennett',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/etudiant/mathilde_bennett.php',
-    ),
-
-    'melusine_caillau' => array(
-        'isView' => true,
-        'title' => 'Mélusine Caillau',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/etudiant/melusine_caillau.php',
-    ),
-
-    'jeanne_dubois' => array(
-        'isView' => true,
-        'title' => 'Jeanne Dubois Pacquet',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/etudiant/jeanne_dubois.php',
-    ),
-
-    'floriane_grosset' => array(
-        'isView' => true,
-        'title' => 'Floriane Grosset',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/etudiant/floriane_grosset.php',
-    ),
-
-    'camille_guillaud' => array(
-        'isView' => true,
-        'title' => 'Camille Guillaud',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/etudiant/camille_guillaud.php',
-    ),
-
-    'lola_jacrot' => array(
-        'isView' => true,
-        'title' => 'Lola Jacrot',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/etudiant/lola_jacrot.php',
-    ),
-
-    'woorim_moon' => array(
-        'isView' => true,
-        'title' => 'Woorim Moon',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/etudiant/woorim_moon.php',
-    ),
-
-    'camille_ragnaud' => array(
-        'isView' => true,
-        'title' => 'Camille Ragnaud',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/etudiant/camille_ragnaud.php',
-    ),
-
-    'juliette_guiot' => array(
-        'isView' => true,
-        'title' => 'Juliette Guiot',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/etudiant/juliette_guiot.php',
-    ),
-
-    'arthur_billaud' => array(
-        'isView' => true,
-        'title' => 'Arthur Billaud',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/etudiant/arthur_billaud.php',
-    ),
-
-    'sandy_kalaydjian' => array(
-        'isView' => true,
-        'title' => 'Sandy Kalaydjian',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/etudiant/sandy_kalaydjian.php',
-    ),
-
-    'stanley_obobogo' => array(
-        'isView' => true,
-        'title' => 'Stanley Obobogo',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/etudiant/stanley_obobogo.php',
-    ),
-
-    'rudy_dumas' => array(
-        'isView' => true,
-        'title' => 'Rudy Dumas Djandolo',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/etudiant/rudy_dumas.php',
-    ),
-
-    'stanca_soare' => array(
-        'isView' => true,
-        'title' => 'Stanca Soare',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/etudiant/stanca_soare.php',
-    ),
-
-    'maylis_breton' => array(
-        'isView' => true,
-        'title' => 'Maylïs Breton',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/etudiant/maylis_breton.php',
-    ),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    'cellules' => array(
-        'isView' => true,
-        'title' => 'Cellules de mort',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/projets/cellules.php',
-    ),
-
-    'ecorche' => array(
-        'isView' => true,
-        'title' => 'Ecorché',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/projets/ecorche.php',
-    ),
-
-    'racines' => array(
-        'isView' => true,
-        'title' => 'Racines',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/projets/racines.php',
-    ),
-
-    'phaeophyceae' => array(
-        'isView' => true,
-        'title' => 'Phaeophyceae',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/projets/phaeophyceae.php',
-    ),
-
-    'a_travers' => array(
-        'isView' => true,
-        'title' => 'À travers',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/projets/a_travers.php',
-    ),
-
-    'arbrologie' => array(
-        'isView' => true,
-        'title' => 'Arbrologie',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/projets/arbrologie.php',
-    ),
-
-    'un_autre' => array(
-        'isView' => true,
-        'title' => 'L\' un dans l\'autre',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/projets/un_autre.php',
-    ),
-
-    'reveries' => array(
-        'isView' => true,
-        'title' => 'Rêveries',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/projets/reveries.php',
-    ),
-
-    'chou' => array(
-        'isView' => true,
-        'title' => 'Empreintes de chou',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/projets/chou.php',
-    ),
-
-    'ombres' => array(
-        'isView' => true,
-        'title' => 'Ombres',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/projets/ombres.php',
-    ),
-
-    'trajets' => array(
-        'isView' => true,
-        'title' => 'Trajets de poche',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/projets/trajets.php',
-    ),
-
-    'parcours' => array(
-        'isView' => true,
-        'title' => 'Parcours visuel',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/projets/parcours.php',
-    ),
-
-    'machine' => array(
-        'isView' => true,
-        'title' => 'La machine, l\'oiseau et l\'ananas',
-        'assets' => array(
-            'css' => array(
-                'machine'
-            ),
-        ),
-        'path' =>'/static/projets/machine.php',
-    ),
-
-    'balaena' => array(
-        'isView' => true,
-        'title' => 'Balaena',
-        'assets' => array(
-            'css' => array(
-                'os'
-            ),
-        ),
-        'path' =>'/static/projets/balaena.php',
-    ),
-
-    'protecteurs' => array(
-        'isView' => true,
-        'title' => 'Les Protecteurs',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/projets/protecteurs.php',
-    ),
-
-    'betes' => array(
-        'isView' => true,
-        'title' => 'Bêtes',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/projets/betes.php',
-    ),
-
     'aquariophiles' => array(
         'isView' => true,
         'title' => 'Tentatives aquariophiles',
@@ -479,48 +296,12 @@ $_routes += array(
                 'aquariophiles'
             ),
         ),
-        'path' =>'/static/projets/aquariophiles.php',
+        'path' =>'/static/projets/bestiaire/aquariophiles.php',
     ),
 
-    'ecrivain' => array(
-        'isView' => true,
-        'title' => 'L\'écrivain ou capricorne velutinus',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/projets/ecrivain.php',
-    ),
 
-    'bestiaire' => array(
-        'isView' => true,
-        'title' => 'Bestiaire',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/projets/bestiaire.php',
-    ),
 
-    'veau' => array(
-        'isView' => true,
-        'title' => 'Le veau',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/projets/veau.php',
-    ),
 
-    'corde' => array(
-        'isView' => true,
-        'title' => 'La cinquième corde',
-        'assets' => array(
-            'css' => array(
-            ),
-        ),
-        'path' =>'/static/projets/corde.php',
-    ),
 
 );
 

@@ -2,7 +2,7 @@
 *Polices de caractere
 */
 
-@font-face
+/*@font-face
 {
     font-family: "gulim";
     src: url('/css/font/gulim.ttf');
@@ -12,7 +12,7 @@
 {
     font-family: "HeitiSC";
     src: url('/css/font/stheiti.ttf');
-}
+}*/
 
 @font-face
 {
@@ -108,9 +108,18 @@ li
     margin-top: -60px;
 }
 
-.titre_second, .titre_principal, .bloc_icones, .image, .article, .infos, .debutexpo
+.titre_second, .titre_principal, .bloc_icones, .image, .article, .infos, .debutexpo, .video
 {
     padding-left: 1.5%;
+}
+
+.titre_tiers
+{
+    padding-left: 5%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    line-height: 25px;
+
 }
 
 .bloc_image
@@ -161,7 +170,26 @@ li
     padding-left: 1.5%;
 }
 
+.fleche_gauche
+{
+    float: left;
+    position: fixed;
+    top: 40%;
+}
 
+.fleche_droite
+{
+    float: left;
+    position: fixed;
+    left:93%;
+    top: 40%;
+    z-index: 1;
+}
+
+.galerie
+{
+    padding-left: 40px;
+}
 
 
 /**
@@ -170,7 +198,7 @@ li
 
 .texte
 {
-    font-family: gulim;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     /*text-align: justify;*/
 }
@@ -183,14 +211,14 @@ li
 .article, .text_col
 {
     text-align: justify;
-    font-family: calibri;
+    font-family: Calibri, calibri;
     color: #848284;
 }
 
 .strong
 {
     color: black;
-    font-family: HeitiSC;
+    font-family: 'Raleway', sans-serif;
 }
 
 .top
@@ -200,13 +228,13 @@ li
 
 .titre_principal
 {
-    font-family: HeitiSC;
+    font-family: 'Raleway', sans-serif;
     font-size: 100px;
 }
 
 .titre_second
 {
-    font-family: HeitiSC;
+    font-family: 'Raleway', sans-serif;
     font-size: 30px;
     color: #848284;
 }
@@ -232,14 +260,14 @@ li
 .lien, .lien:hover
 {
    text-decoration: none;
-   font-family: gulim;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .lien_col
 {
     color: rgb(82, 109, 147);
     text-decoration: none;
-    font-family: HeitiSC;
+    font-family: 'Raleway', sans-serif;
 }
 
 .lien_col:hover
@@ -251,6 +279,7 @@ li
 {
     width: 5cm;
     margin-top: 20px;
+    padding-left: 450px;
 }
 
 /**
@@ -264,6 +293,86 @@ Listes
     padding-bottom: 20px;
 
 }
+
+/**
+Médias
+**/
+.video
+{
+    width: 1080px;
+    height: 720px;
+}
+
+.reponsevideo
+{
+    padding-top: 20px;
+    padding-left: 40px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+
+
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 0;
+    height: 0;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.audioWrapper {
+    position: relative;
+    padding-bottom: 25%;
+    padding-top: 0;
+    height: 0;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.audioWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.musee
+{
+    margin-top: 5px
+}
+
+
+@media screen and (max-width: 1680px)
+        {
+            .video
+            {
+                width: 800px;
+                height: 450px;
+            }
+
+        }
+
+@media screen and (max-width: 1190px)
+        {
+            .video
+            {
+                width: 570px;
+                height: 321px;
+            }
+
+        }
+
 
 
         @media screen and (max-width: 1000px)
@@ -407,6 +516,12 @@ Listes
                 padding-top: 15px;
             }
 
+            .video
+            {
+                width: 800px;
+                height: 450px;
+            }
+
 
 
         }
@@ -445,6 +560,12 @@ Listes
 
         font-size: 16px;
 
+    }
+
+    .video
+    {
+        width: 470px;
+        height: 270px;
     }
 
 
@@ -495,13 +616,20 @@ Listes
                 width: 2cm;
             }
 
+            .video
+            {
+                width: 310px;
+                height: 180px;
+            }
+
         }
 
-@media screen and (max-device-width: 480px) /* Pour les mobiles à vérifier !!*/
+
+/*@media screen and (max-device-width: 480px) /* Pour les mobiles à vérifier !!
 {
     /**
     *Positionnement global
-    **/
+
 
     .global
     {
@@ -515,7 +643,7 @@ Listes
 
     /**
     *Liens
-    */
+
 
     .lien:hover, .lien_col:hover
     {
@@ -525,7 +653,7 @@ Listes
 
     /**
     *Images et icones
-    */
+
 
     .image, .article
     {
@@ -538,4 +666,4 @@ Listes
         width: 2cm;
     }
 
-}
+}*/

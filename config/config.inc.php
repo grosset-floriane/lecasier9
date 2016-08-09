@@ -14,7 +14,7 @@
 
 $_config = array(
     'app' => array(
-        'title' => 'Le Casier 9',
+        'title' => 'Floriane Grosset',
         'sub_title' => '',
         'logo' => '',
         'copy_right_text' => '&copy; 2015',

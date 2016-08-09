@@ -1,80 +1,11 @@
-<h1 class="titre_principal">À propos</h1>
+ <div class="droite">
+    <p class="text">
+        <span class="marge">Etudiante en troisième année option communication à l'Ecole Supérieure d'Arts et Médias de Caen/Cherbourg, j’ai développé ma création artistique autour de la diffusion d’images fixes et en mouvement par le biais de la vidéo, mais aussi par la création d’objet et de la photographie. Je m’intéresse à la dualité entre le déplacement et l’enfermement notamment par le biais du panorama et du paysage.  <br>
+        <span class="marge">J'oriente mon travail vers la création d’édition sous la forme de petits objets qui pour moi permet de rendre l’art disponible au plus grand nombre et sort du carcan des institutions muséales et des galeries et pénètrent ainsi les foyers. Ces objets permettront également de donner à la photographie un volume et un mouvement dans sa visualisation. Je réfléchis aussi sur le panorama comme retranscription d’un paysage, ou d’un quotidien, ou d’un déplacement ; sur la retranscription de souvenir et du rêve par l’utilisation de différentes techniques et par le montage – agencement d’image photographique ou vidéographique.
+    </p>
+</div>
 
 
-<article class="article about">
-<p>Le Casier 9 est une galerie web gérée par les étudiants de deuxième année à l’École Supérieure d'Art et Média de Caen et Cherbourg (ESAM) et où ils peuvent proposer des travaux tous les mois sur un thème donné.
-
-La galerie vous propose un rendez-vous tous les mois pour une nouvelle exposition autour d’un thème, d’une notion, d’un mot que nous avons eu envie d’aborder, de questionner.
-
-Le Casier 9 propose également réguliairement à un étudiant de l'ESAM toutes années confondues de réaliser une installation dans un casier de l'école, sans aucun thème imposé. </p>
-
-
-
-<p class="strong">L'équipe du site</p>
-</article>
-
-<table class="table">
-    <tr>
-        <td>
-                <img class="icones membre"src="/img/ico/floriane_ico.png" alt="Floriane Grosset">
-        </td>
-
-        <td class="col_table text_col">
-            <p class="strong">Floriane Grosset</p>
-            <p>Webmaster <br/>
-            Webdesign</p>
-        </td>
-
-        <td>
-                <img class="icones membre"src="/img/ico/olivier_ico.png" alt="Olivier Le Borgne">
-        </td class="col_table">
-
-        <td class="col_table text_col">
-            <p class="strong">Olivier Le Borgne</p>
-            <p>Webdesign <br/>
-            Logodesign</p>
-        </td>
-
-    </tr>
-
-    <tr>
-        <td>
-                <img class="icones membre"src="/img/ico/sandy_ico.png" alt="Sandy Kalaydjian">
-        </td>
-
-        <td class="col_table text_col">
-            <p class="strong">Sandy Kalaydjian</p>
-            <p>Encodeur</p>
-        </td>
-
-        <td>
-                <img class="icones membre"src="/img/ico/lola_ico.png" alt="Lola Jacrot">
-        </td>
-
-        <td class="col_table text_col">
-            <p class="strong">Lola Jacrot</p>
-            <p>Correcteur</p>
-        </td>
-
-    </tr>
-
-    <tr>
-        <td >
-                <img class="icones membre"src="/img/ico/stanca_ico.png" alt="Stanca Soare">
-        </td>
-
-        <td class="col_table text_col">
-            <p class="strong">Stanca Soare</p>
-            <p>Gestionnaire de média</p>
-        </td>
-
-        <td>
-                <img class="icones membre"src="/img/ico/camille_ico.png" alt="Camille Guillot">
-        </td>
-
-        <td class="col_table text_col">
-            <p class="strong">Camille Guillaud</p>
-            <p>Testeur</p>
-        </td>
-    </tr>
-</table>
+<div class="gauche">
+    <img class="img" src="/img/about.jpg" />
+</div>
